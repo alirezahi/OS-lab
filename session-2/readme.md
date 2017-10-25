@@ -35,7 +35,7 @@ You can sort the list by```sort``` and unique the file with ```uniq -c ``` (-c d
 
 
 To sort by for example the n-th column we have to use this command :
-```sudo <file-name> | cut -c 1-5 | sort | uniq -c | sort -k2
+```sudo <file-name> | cut -c 1-5 | sort | uniq -c | sort -k2```
 
 ```|``` is pipe command that means pass the last result to the next process
 
