@@ -1,8 +1,12 @@
-# iNode
-Every file has an inode which all inodes are stored in a file in file system and we can find any file by its inode.
-To find out the inode of a file or folder we can use the command  ```ls -lid``` or ```ls -li```
+# Session 2
 
-Every line of command is a prompt
+## Prompt
+A short text message at the start of the command line on a command line interface is called prompt
+
+## iNode
+Every file has an inode, which all inodes are stored in a file in file system and we can find any file by its inode.
+
+We can reach the inode of a file or folder by using the command  ```ls -lid``` or ```ls -li```
 
 With this command you can point to a 
 ```ln <file-name.txt> <new-name-file>```
@@ -47,9 +51,6 @@ To sort by for example the n-th column we have to use this command :
 ```at now +1 minute```
 ```ls```
 
-
-```at now 
-
 Minute|Hours|dayOfMonth|month|dayOfWeek|cmd
 ```crontab -e 0 1 1 * * echo 'hello'```
 ```crontab -e */2 * * * echo 'hello'``` It will echo every 2 minutes
@@ -63,6 +64,7 @@ to test all pings(-c1 means test every ip only once):
 
 The following will ping every ip that we want(```#!bin/bash``` means that this code is written in bash. we can use it for python or other languages too)
 ```#!bin/bash
+#!bin/bash
 for i in {1..254}
 do
 ping -c 91.98.93.$i | grep ttl &
