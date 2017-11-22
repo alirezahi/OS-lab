@@ -34,7 +34,7 @@ We can change owner with the command ```chown```
 
 With the ```unmask``` command we can change the access and mask number of each file or directory.
 
-## Date
+### Date
 Accessing to the date is possible with ```date```
 
 We can format date with ```date +"%y-%m-%d"```.It will return something like this:
