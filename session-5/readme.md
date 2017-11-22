@@ -75,3 +75,13 @@ esac
 
 ```*``` means other choices of variable that was not present in previous case choices
 
+## Regex
+We can filter command with grep using regex. For example:
+~~~
+seq 1000 9999 | grep .2.2
+~~~
+
+To see if first letter and last letter are equal we can use this command
+~~~
+seq 10000 99999 | grep -E "([1-9])...\1" | more
+~~~
