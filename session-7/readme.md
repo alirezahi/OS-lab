@@ -29,3 +29,26 @@ sudo lvcreate -n mypart -L 800M myvg
 
 sudo mount /dev/myvg/mypart /home/lab2/newpart
 ~~~
+
+## Raid
+Raid 0 -> strips the data
+
+Like this:
+
+First DB -> 1,3,5,7,...
+
+Second DB -> 2,4,6,8,...
+
+Raid 1 -> duplicates the data
+
+Like this:
+
+First DB -> 1,2,3,4,5,....
+
+Second DB -> 1,2,3,4,5,....
+
+Raid 1+0 -> duplicates the data and then strips it
+
+Raid 0+1 -> strips the data and then duplicates it
+
+Raid 5 -> stripes the data and uses the last one to recover the loss data
